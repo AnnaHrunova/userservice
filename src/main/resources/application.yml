@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:userStore
+    driverClassName=: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+  h2:
+    console:
+      enabled: true
+
+email:
+  salt: emailplatform!-!salt
